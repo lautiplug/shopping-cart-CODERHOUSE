@@ -657,16 +657,17 @@ footer .footer__icons .fa-brands {
   font-weight: bold;
 }
 .form__container .form-control {
-  border: 1px solid rgb(136, 136, 136);
+  border: 1px solid rgb(209, 209, 209);
+  outline: none;
   margin-bottom: 20px;
   border-radius: 0;
-  transition: all 200ms;
+  transition: all 800ms;
 }
 .form__container .form-control:focus {
   box-shadow: none;
-  border: 1px solid #000;
+  border: none;
+  border-bottom: 1px solid #000;
   border-radius: 0;
-  transition: all 600ms;
 }
 .form__container .form-control::placeholder:active {
   display: none;
@@ -744,7 +745,7 @@ footer .footer__icons .fa-brands {
 
 .last_container .last_description_input, nav .navbar-toggler:focus,
 nav .navbar-toggler:active,
-nav .fa-bars:focus, .form__container .form-control:focus, .form__container .form-check-input:focus {
+nav .fa-bars:focus, .form__container .form-check-input:focus {
   outline: none;
   border: none;
 }
