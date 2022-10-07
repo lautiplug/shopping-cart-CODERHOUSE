@@ -1,0 +1,42 @@
+.maps {
+    @include maps-flex;
+    padding: 40px;
+    width: 100%;
+    @include m0-a;
+
+    .maps__1,  iframe{
+        margin: 20px;
+        width: 90%;
+
+        .maps__h3 {
+            font-weight: $fwb;
+            @extend %center;
+        }
+
+        .fa-phone {
+            font-size: $fontLinkF;
+            overflow-y: hidden;
+        }
+    }
+    .call {
+        @extend %center;
+        font-size: $fonth3;
+        font-weight: $fwb;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .maps {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include m0-a;
+
+        .maps__1, .maps__2, .maps__3, iframe{
+            margin: 10px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+
+}

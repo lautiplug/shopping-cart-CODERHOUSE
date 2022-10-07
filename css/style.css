@@ -1,6 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* bold 700 (title) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+/* colors */
 * {
   padding: 0px;
   margin: 0px;
@@ -12,7 +14,11 @@
   overflow-x: hidden;
 }
 
-.submain_subtitle, .before_gallery_h2, .last_h3, .last__img-subtitle, .last_h2, .nosotros__h2, .maps__h3, .marcas__title {
+a {
+  text-decoration: none;
+}
+
+.submain_subtitle, .before_gallery_h2, .last_h3, .last__img-subtitle, .last_h2, .nosotros__h2, .maps__h3, .marcas__title, .title__h2-form {
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
@@ -31,8 +37,6 @@
 }
 
 .before_gallery_h2 {
-  align-items: center;
-  text-align: center;
   margin: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -76,7 +80,6 @@
   align-items: center;
 }
 .nosotros .nosotros__h2 {
-  text-align: center;
   margin: 10px;
   padding: 20px;
   font-size: 35px;
@@ -87,7 +90,6 @@
 .nosotros .nosotros__p {
   margin: 0 auto;
   width: 55%;
-  text-align: center;
   margin-bottom: 40px;
 }
 .nosotros .nosotros__btn {
@@ -129,7 +131,6 @@
   height: auto;
 }
 .last_container .last_description .nosotros__a {
-  text-decoration: none;
   color: #000;
   font-weight: bold;
 }
@@ -153,7 +154,6 @@
 .last_container .last_description_input {
   width: 100%;
   border: 1px solid #000;
-  outline: none;
   padding: 10px;
   margin: 0 auto;
 }
@@ -168,20 +168,9 @@
     background-size: center;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .gallery {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 20px;
-    gap: 15px;
-    margin: 0 auto;
-  }
-}
 @media only screen and (max-width: 950px) {
   .gallery {
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -239,7 +228,6 @@
   height: 35px;
   background-color: #000;
   color: #fff;
-  text-align: center;
   line-height: 20px;
   font-size: 13px;
 }
@@ -262,6 +250,7 @@ nav .nav__links {
 nav .nav__links .items-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 nav .nav__links .items-container .fa-regular {
   font-size: 25px;
@@ -279,7 +268,7 @@ nav .nav__links .items-container .shopping-cart {
 }
 nav .fa-solid {
   font-size: 20px;
-  color: black;
+  color: #000;
 }
 nav .fa-bars {
   font-size: 25px;
@@ -288,12 +277,6 @@ nav .fa-bars {
 nav .fa-bars:hover {
   transition: all 300ms;
   transform: scale(1.1);
-}
-nav .navbar-toggler:focus,
-nav .navbar-toggler:active,
-nav .fa-bars:focus {
-  outline: none;
-  box-shadow: none;
 }
 nav .btn-close {
   position: absolute;
@@ -308,6 +291,7 @@ nav .btn-close:focus, nav .btn-close:active {
 nav .items-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 nav .fa-regular {
   font-size: 26px;
@@ -339,7 +323,6 @@ footer {
   color: #fff;
 }
 footer .footer__logotype {
-  align-items: center;
   margin-bottom: 60px;
 }
 footer .footer__logotype .footer__pleft {
@@ -352,8 +335,6 @@ footer .footer__title, footer .footer__logo {
   margin-left: 35px;
 }
 footer .footer__links {
-  align-items: center;
-  text-align: center;
   margin-right: 50px;
 }
 footer .footer__links .h3__footer {
@@ -362,7 +343,6 @@ footer .footer__links .h3__footer {
 }
 footer .footer__links .footer__link, footer .footer__links .footer__a {
   list-style: none;
-  text-decoration: none;
   display: block;
   flex-direction: column;
   color: #fff;
@@ -419,9 +399,11 @@ footer .footer__icons .fa-brands {
     background-color: #000;
     color: #fff;
   }
-  footer .footer__container {
-    display: flex;
-    flex-direction: row;
+  footer .footer__logotype {
+    margin-right: 45px;
+  }
+  footer .footer__logotype .footer__logo {
+    margin: 0;
   }
   footer .footer__links, footer .footer__links2 {
     margin-right: 50px;
@@ -448,7 +430,6 @@ footer .footer__icons .fa-brands {
   font-weight: bold;
   color: #000;
   font-size: 35px;
-  text-align: center;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 50px;
@@ -465,7 +446,6 @@ footer .footer__icons .fa-brands {
 .flex__card .flex__child {
   height: 105%;
   object-fit: cover;
-  border: 1px solid rgb(240, 240, 240);
   border-radius: 10px;
   padding: 20px;
   transition: 300ms ease-in-out;
@@ -494,6 +474,7 @@ footer .footer__icons .fa-brands {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   -moz-box-pack: start;
   justify-content: flex-start;
   padding: 15px;
@@ -513,7 +494,6 @@ footer .footer__icons .fa-brands {
   font-size: 25px;
   color: #000;
   width: 100px;
-  text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -538,6 +518,235 @@ footer .footer__icons .fa-brands {
     font-weight: bold;
     font-size: 22px;
   }
+}
+.maps {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+.maps .maps__1, .maps iframe {
+  margin: 20px;
+  width: 90%;
+}
+.maps .maps__1 .maps__h3, .maps iframe .maps__h3 {
+  font-weight: bold;
+}
+.maps .maps__1 .fa-phone, .maps iframe .fa-phone {
+  font-size: 17px;
+  overflow-y: hidden;
+}
+.maps .call {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1300px) {
+  .maps {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .maps .maps__1, .maps .maps__2, .maps .maps__3, .maps iframe {
+    margin: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.marcas__title {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.marcas__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.marcas__container .marcas__ol,
+.marcas__container .marcas__a {
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  display: block;
+  flex-direction: column;
+  font-size: 13px;
+}
+.marcas__container .marcas__ol:hover,
+.marcas__container .marcas__a:hover {
+  transition: all 300ms;
+  color: #ff0000;
+}
+
+@media only screen and (max-width: 550px) {
+  .marcas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .marcas__container .marcas {
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .marcas__container .marcas .marcas__ol {
+    margin-right: 30px;
+  }
+}
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotros .nosotros__h2 {
+  margin: 10px;
+  padding: 20px;
+}
+.nosotros .nosotros__p {
+  margin: 0 auto;
+  width: 55%;
+  margin-bottom: 40px;
+}
+.nosotros .nosotros__p .nosotros__a {
+  color: #000;
+  font-weight: bold;
+}
+.nosotros .nosotros__p .nosotros__a:hover {
+  transition: all 300ms;
+  color: #ff0000;
+}
+.nosotros .nosotros__img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.title__h2-form {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.form__container {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  padding-top: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form__container .form__login {
+  width: 100%;
+  object-fit: cover;
+}
+.form__container .form-label {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.form__container .form-control {
+  border: 1px solid rgb(136, 136, 136);
+  margin-bottom: 20px;
+  border-radius: 0;
+  transition: all 200ms;
+}
+.form__container .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #000;
+  border-radius: 0;
+  transition: all 600ms;
+}
+.form__container .form-control::placeholder:active {
+  display: none;
+}
+.form__container .form-check-input:focus {
+  background-color: #ff0000;
+  box-shadow: none;
+}
+.form__container .form-check-label {
+  color: #000;
+  font-size: 15px;
+}
+.form__container .form__btn {
+  width: 350px;
+  background-color: #ff0000;
+  color: #fff;
+}
+.form__container .form__link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 300ms;
+}
+.form__container .form__link:hover {
+  color: #ff0000;
+}
+.form__container .fa-facebook-f, .form__container .fa-google, .form__container .fa-twitter, .form__container .fa-github {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* añado esta clase porque no puedo separar el formulario del footer */
+.no-content {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 640px) {
+  .form__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 990px) {
+  .form__container {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .form__container {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.flex__card .flex__child, .form__container {
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.before_gallery_h2, .nosotros .nosotros__h2, .nosotros .nosotros__p, .ad__envios, footer .footer__logotype, footer .footer__links, .title__h2, .flex__card .flex__child .flex__content-description .flex__p, .maps .maps__1 .maps__h3, .maps iframe .maps__h3, .maps .call, .marcas__title, .marcas__container .marcas__ol,
+.marcas__container .marcas__a, .title__h2-form {
+  align-items: center;
+  text-align: center;
+}
+
+.last_container .last_description_input, nav .navbar-toggler:focus,
+nav .navbar-toggler:active,
+nav .fa-bars:focus, .form__container .form-control:focus, .form__container .form-check-input:focus {
+  outline: none;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */

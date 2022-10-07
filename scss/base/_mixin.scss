@@ -1,0 +1,45 @@
+@mixin display-flex-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin grid-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+@mixin grid-index-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+@mixin last-container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin last-description-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin maps-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@mixin m0-a{
+    margin: 0 auto;
+}

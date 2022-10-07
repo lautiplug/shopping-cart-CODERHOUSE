@@ -5,7 +5,7 @@
     height: 35px;
     background-color: $primaryColor;
     color: $terciaryColor;
-    text-align: center;
+    @extend %center;
     line-height: 20px;
     font-size: $fontP;
 }
@@ -28,8 +28,7 @@ nav{
         margin-top: 40px;
     
         .items-container {
-            display: flex;
-            flex-direction: column;
+            @include display-flex-c;
         
             .fa-regular {
                 font-size: 25px;
@@ -51,7 +50,7 @@ nav{
 
         .fa-solid {
             font-size: 20px;
-            color: black;
+            color: $primaryColor;
         }
 
         .fa-bars {
@@ -67,8 +66,7 @@ nav{
         .navbar-toggler:focus,
         .navbar-toggler:active, 
         .fa-bars:focus {
-            outline: none;
-            box-shadow: none;
+            @extend %obNone;
         }
         
         .btn-close {
@@ -85,8 +83,7 @@ nav{
         }
         
         .items-container {
-            display: flex;
-            flex-direction: column;
+            @include display-flex-c;
         }
         
         .fa-regular {

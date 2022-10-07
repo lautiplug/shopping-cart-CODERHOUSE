@@ -1,14 +1,12 @@
 footer {
     width: 100%;
     height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-footer;
     background-color: $primaryColor;
     color: $terciaryColor;
 
     .footer__logotype {
-        align-items: center;
+        @extend %center;
         margin-bottom: 60px;
 
         .footer__pleft {
@@ -24,8 +22,7 @@ footer {
     }
 
     .footer__links {    
-        align-items: center;
-        text-align: center;
+        @extend %center;
         margin-right: 50px;
 
         .h3__footer {
@@ -34,7 +31,6 @@ footer {
         }
         .footer__link, .footer__a {
             list-style: none;
-            text-decoration: none;
             display: block;
             flex-direction: column;
             color: $terciaryColor;
@@ -76,7 +72,7 @@ footer {
         
         .footer_a_icons, .fa-brands {
             color: $terciaryColor;
-            margin: 0 auto;
+            @include m0-a;
             font-size: 24px;
             margin-right: 15px;
             margin-top: 15px;
@@ -93,16 +89,17 @@ footer {
     footer {
         width: 100%;
         height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex-footer;
         flex-direction: column;
         background-color: $primaryColor;
         color: $terciaryColor;
 
-        .footer__container {
-            display: flex;
-            flex-direction: row;
+        .footer__logotype {
+            margin-right: 45px;
+
+            .footer__logo {
+                margin: 0;
+            }
         }
     
         .footer__links, .footer__links2 {

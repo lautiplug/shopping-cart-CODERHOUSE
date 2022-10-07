@@ -1,6 +1,12 @@
-@import './partials/variables';
+@import './base/variables';
+@import './base/mixin';
 @import './base/resets';
 @import './partials/index';
 @import './partials/header';
 @import './partials/footer';
 @import './partials/sneakers';
+@import './partials/sucursales';
+@import './partials/marcas';
+@import './partials/nosotros';
+@import './partials/login';
+@import './base/extend';

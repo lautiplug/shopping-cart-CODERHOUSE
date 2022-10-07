@@ -9,7 +9,11 @@
     overflow-x: hidden;
 }
 
-.submain_subtitle, .before_gallery_h2, .last_h3, .last__img-subtitle, .last_h2, .nosotros__h2, .maps__h3, .marcas__title {
+a {
+    text-decoration: none;
+}
+
+.submain_subtitle, .before_gallery_h2, .last_h3, .last__img-subtitle, .last_h2, .nosotros__h2, .maps__h3, .marcas__title, .title__h2-form {
     color: $primaryColor;
     font-weight: bold;
     text-transform: uppercase;

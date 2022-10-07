@@ -11,11 +11,11 @@
 }
 
 .before_gallery_h2{
-    align-items: center;
-    text-align: center;
+    @extend %center;
+    @extend %center;
     margin: 50px;
     font-family: $fontPoppins;
-    font-weight: bold;
+    font-weight: $fwb;
     color: $primaryColor;
     text-transform: uppercase;
     font-size: 35px;
@@ -23,12 +23,10 @@
 
 .gallery {
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    @include grid-index;
     padding: 20px;
     gap: 15px;
-    margin: 0 auto;
+    @include m0-a;
     margin-top: 40px;
 
     .gallery__img-img {
@@ -57,12 +55,10 @@
 
 
 .nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include display-flex-c;
 
     .nosotros__h2 {
-        text-align: center;
+        @extend %center;
         margin: 10px;
         padding: 20px;
         font-size: $fonth2;
@@ -72,9 +68,9 @@
     }
     
     .nosotros__p{
-        margin: 0 auto;
+        @include m0-a;
         width: 55%;
-        text-align: center;
+        @extend %center;
         margin-bottom: 40px;
     }
     
@@ -93,9 +89,7 @@
 }
 
 .last_container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include last-container-flex;
     width: 100%;
 
     .last_h2 {
@@ -114,17 +108,14 @@
     }
     
     .last_description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include last-description-flex;
         width: 40%;
         margin: 50px;
         height: auto;
 
         .nosotros__a {
-            text-decoration: none;
             color: $primaryColor;
-            font-weight: bold;
+            font-weight: $fwb;
 
             &:hover {
                 transition: all 300ms;
@@ -132,10 +123,9 @@
             }
         }
     
-    }
-    
+    }   
     .last_description_form {
-        margin: 0 auto;
+        @include m0-a;
     }
     
     .last_description__btn {
@@ -145,16 +135,16 @@
         color: $terciaryColor;
         width: 100px;
         margin: 0px;
-        margin: 0 auto;
+        @include m0-a;
         margin: 20px;
     }
     
     .last_description_input {
         width: 100%;
         border: 1px solid $primaryColor;
-        outline: none;
+        @extend %obNone;
         padding: 10px;
-        margin: 0 auto;
+        @include m0-a;
     }
 }
 
@@ -169,24 +159,10 @@
     }
 }
 
-@media only screen and (max-width:1200px) {
-    .gallery {
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        padding: 20px;
-        gap: 15px;
-        margin: 0 auto;
-    }
-}
-
 @media only screen and (max-width:950px){
     .gallery {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        width: 90%;
+        @include grid-index-tablet;
         padding: 20px;
         gap: 15px;
         margin: 0 auto;
@@ -218,9 +194,7 @@
 
 @media screen and (max-width: 1144px) {
     .last_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display-flex-c;
         text-align: center;
 
         
