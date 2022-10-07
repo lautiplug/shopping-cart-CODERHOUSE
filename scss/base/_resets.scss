@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: $fontPoppins;
+    list-style: none;
+    text-decoration: none;
+        /* se genera un scroll horizontal en index.html 
+    sin haber algo que se exceda */
+    overflow-x: hidden;
+}
+
+.submain_subtitle, .before_gallery_h2, .last_h3, .last__img-subtitle, .last_h2, .nosotros__h2, .maps__h3, .marcas__title {
+    color: $primaryColor;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow-y: hidden;
+}

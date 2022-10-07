@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/68b69ce558.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../Pre-entrega2-Pintos/img/logoico.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css_backup/backup.css">
+    <title>PLUG</title>
+</head>
+<body>
+    <p class="nav__ad"> <i class="fa-solid fa-truck"></i> Envios a todo el pais. Pagá con el método de pago que prefieras. </p>
+    <nav class="navbar navbar-expand-lg navbar-light p-3 nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo__img" src="assets/img/logo_small.png" alt=""></a>
+          <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header nav__links">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             <div class="items-container">
+               <a class="nav-link text-dark h5 ff" href=""><i class="fa-regular fa-user"></i></a>
+               <a class="nav-link text-dark h5 ff" href=""><img class="shopping-cart" src="assets/img/shopping-cart.png" alt=""></a>
+             </div>
+            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link mx-2 nav-item__a" href="index.html">Home</a>
+              </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 nav-item__a" href="sneakers.html">Sneakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 nav-item__a" href="sucursales.html">Sucursales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 nav-item__a" href="marcas.html">Marcas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2 nav-item__a" href="nosotros.html">Nosotros</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h6" href="" target="blank"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="login.html" target="blank"><i class="fa-solid fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h2 class="title__h2-form">Para continuar, necesitas entrar a tu cuenta!</h2>
+
+      <form class="form__container">
+
+            <div class="form__login">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Por favor introduce tus datos de registro.</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email@email.com">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Contraseña">
+                  </div>
+            </div>
+      
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Recuérdame</label>
+                    </div>
+              
+                </div>
+      
+                <div class="col">
+                    <a class="form__link" href="#!">Olvidaste la contraseña?</a>
+                </div>
+            </div>
+      
+            <button type="button" class="btn btn-danger mb-4 form__btn">Ingresar</button>
+      
+        <!-- Registro -->
+            <div class="text-center">
+                <p>No tienes una cuenta? <a class="form__link" href="register.html">Registrate</a></p>
+                <p>O registrate con:</p>
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+      
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                         <i class="fab fa-google"></i>
+                    </button>
+      
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+      
+                    <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-github"></i>
+                    </button>
+            </div>
+      </form>
+
+      <div class="no-content"></div>
+
+      <footer>
+        <div class="footer__logotype">
+            <a href="index.html"><img class="footer__logo" src="assets/img/logo_footer.png" alt="logofooter"></a>
+                <p class="footer__pleft">Contáctanos: <b>plug@plug.com</b> </p>
+                <p class="footer__pleft">&#169 Plug snkrs and clothes 2022</p>
+        </div> 
+            
+        <div class="footer__links">
+            <h3 class="h3__footer">Otros enlaces:</h3>
+                <ul class="footer__link">
+                    <li>
+                        <a class="footer__a" href="#">Nuestros proveedores</a>
+                        <a class="footer__a" href="#">Trabaja con nosotros</a>
+                        <a class="footer__a" href="#">Información</a>
+                        <a class="footer__a" href="sucursales.html">Sucursales</a>
+                        <a class="footer__a" target="_blank" href="https://wa.me/+541111111111?text=¡Hola,+quisiera+hacerles+una+pregunta!">Contacto</a>
+                    </li>
+                </ul>
+        </div>
+    
+        <div class="footer__links">
+            <h3 class="h3__footer">Más:</h3>
+                <ul class="footer__link">
+                    <li>
+                        <a class="footer__a" href="index.html">Home</a>
+                        <a class="footer__a" href="marcas.html">Marcas</a>
+                        <a class="footer__a" href="#">Precios</a>    
+                        <a class="footer__a" href="#">Blog</a>
+                        <a class="footer__a" href="nosotros.html">Acerca de</a>     
+                    </li>
+                </ul>
+        </div>
+    
+        <div class="footer__icons">
+            <h3 class="h3__footer__form">Últimas novedades:</h3>
+                <form>
+                    <input class="footer__input" type="text" name="text" id="Newsletter" placeholder="Tu email:">
+                    <button class="footer__btn">Enviar</button>
+                </form>
+                <a class="footer_a_icons" target="_blank" href="https://wa.me/+541111111111?text=¡Hola,+quisiera+hacerles+una+pregunta!"><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="footer_a_icons" target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a class="footer_a_icons" target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

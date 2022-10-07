@@ -1,0 +1,130 @@
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    color: $terciaryColor;
+
+    .footer__logotype {
+        align-items: center;
+        margin-bottom: 60px;
+
+        .footer__pleft {
+            margin-left: 50px;
+            width: 300px;
+        }
+    }
+    
+    .footer__title, .footer__logo{
+        width: 220px;
+        padding: 10px;
+        margin-left: 35px;
+    }
+
+    .footer__links {    
+        align-items: center;
+        text-align: center;
+        margin-right: 50px;
+
+        .h3__footer {
+            font-size: $fonth3;
+            overflow-y: hidden;
+        }
+        .footer__link, .footer__a {
+            list-style: none;
+            text-decoration: none;
+            display: block;
+            flex-direction: column;
+            color: $terciaryColor;
+            font-size: $fontLinkF;
+            align-items: center;
+            padding: 0px;
+
+            &:hover {
+                transition: all 300ms;
+                color: $secondaryColor;
+            }
+        }
+    }
+
+    .footer__icons{
+        font-size: 12px;
+        margin-bottom: 50px;
+
+        .h3__footer__form {
+            font-size: 20px;
+            margin-bottom: 11px;
+            overflow-y: hidden;
+        }
+        
+        .footer__input {
+            padding: 17px;
+            width: 60%;
+            height: 15px;
+            border: none;
+        }
+
+        .footer__btn {
+            padding: 8px;
+            margin-right: 20px;
+            background-color: $secondaryColor;
+            color: $terciaryColor;
+            border: none;
+        }
+        
+        .footer_a_icons, .fa-brands {
+            color: $terciaryColor;
+            margin: 0 auto;
+            font-size: 24px;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        
+        .fa-brands {
+            position: relative;
+            left: 15%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1168px) {
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: $primaryColor;
+        color: $terciaryColor;
+
+        .footer__container {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .footer__links, .footer__links2 {
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }
+    
+        .footer__icons {
+            position: relative;
+            left: 5%;
+        }
+    }
+ 
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        .footer__icons {
+            position: relative;
+            left: 10%;
+        }
+    }
+}
+
