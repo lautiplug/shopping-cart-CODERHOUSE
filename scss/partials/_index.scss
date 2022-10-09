@@ -122,30 +122,40 @@
                 color: $secondaryColor;
             }
         }
-    
+
+        .last_description_form {
+            @include m0-a;
+        }
+        
+        .last_description__btn {
+            padding: 10px;
+            background-color: $botonsPrimary;
+            color: $terciaryColor;
+            border: 1px solid $primaryColor;
+            width: 100px;
+            margin: 0px;
+            @include m0-a;
+            margin: 20px;
+        }
+        
+        .last_description_input {
+            width: 100%;
+            outline: 1px solid black;
+            padding: 10px;
+            @include m0-a;
+
+            &:focus {
+                box-shadow: none;
+                border: none;
+                border-bottom: 1px solid $primaryColor;
+                border-radius: 0;
+              }
+          
+              &::placeholder:active {
+                display: none;
+              }
+        }
     }   
-    .last_description_form {
-        @include m0-a;
-    }
-    
-    .last_description__btn {
-        border: none;
-        padding: 10px;
-        background-color: $botonsPrimary;
-        color: $terciaryColor;
-        width: 100px;
-        margin: 0px;
-        @include m0-a;
-        margin: 20px;
-    }
-    
-    .last_description_input {
-        width: 100%;
-        border: 1px solid $primaryColor;
-        @extend %obNone;
-        padding: 10px;
-        @include m0-a;
-    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -215,7 +225,6 @@
     .last_description {
         width: 80%;
     }
-
     }
 
 }
