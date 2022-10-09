@@ -22,5 +22,6 @@ Este proyecto está bajo la Licencia (MIT License) - mira el archivo [license.tx
 
 * Quiero agradecer a la profesora Sofia Constanza Lagoa y a mis tutores Alan Maldonado y Dennisse Lemos por la excelente labor y la predisposición de ayudarme siempre que lo necesité. También tutores correctores que me han horientado a solucionar errores 😊 CoderHouse me ha brindado herramientas para el correcto desarrollo de este proyecto y la oportunidad de seguirme formando como Web Developer. 📢
 
+
 ---
 ⌨️ Creado por [lautaropintos5](https://github.com/lautaropintos5)😊
