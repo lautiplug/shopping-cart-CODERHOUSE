@@ -137,23 +137,6 @@
             @include m0-a;
             margin: 20px;
         }
-        
-        .last_description_input {
-            width: 100%;
-            padding: 10px;
-            @include m0-a;
-
-            &:focus {
-                box-shadow: none;
-                border: none;
-                border-bottom: 1px solid $primaryColor;
-                border-radius: 0;
-              }
-          
-              &::placeholder:active {
-                display: none;
-              }
-        }
     }   
 }
 

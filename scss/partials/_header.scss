@@ -63,45 +63,33 @@ nav{
             }
         }
         
-        .navbar-toggler:focus,
-        .navbar-toggler:active, 
-        .fa-bars:focus {
-            @extend %obNone;
-        }
-        
         .btn-close {
             position: absolute;
             right: 14%;
             top: 4%;
             font-size: 20px;
             color: $primaryColor;
-
-            &:focus,
-            &:active{
-                box-shadow: none;
-            }
         }
         
         .items-container {
             @include display-flex-c;
-        }
-        
-        .fa-regular {
-            font-size: 26px;
-            position: absolute;
-            bottom: 7%;
-            left: 5.3%;
-            padding: 7px;
-        }
-        
-        .shopping-cart {
-            width: 47px;
-            position: absolute;
-            bottom: 2%;
-            left: 4%;
-            padding: 10px;
-        }
 
+            .fa-regular {
+                font-size: 26px;
+                position: absolute;
+                bottom: 7%;
+                left: 5.3%;
+                padding: 7px;
+            }
+            
+            .shopping-cart {
+                width: 47px;
+                position: absolute;
+                bottom: 2%;
+                left: 4%;
+                padding: 10px;
+            }
+        }
 }
 
 @media only screen and (max-width: 768px){
