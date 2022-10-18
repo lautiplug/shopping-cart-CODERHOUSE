@@ -730,7 +730,7 @@ footer .footer__icons .fa-brands {
   font-size: 15px;
 }
 .form__container .form__btn {
-  width: 350px;
+  width: 100%;
   background-color: #ff0000;
   color: #fff;
 }
