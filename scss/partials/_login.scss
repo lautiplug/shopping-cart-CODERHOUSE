@@ -1,8 +1,8 @@
 .title__h2-form {
-    @extend %center;
-    margin-bottom: 40px;
-    font-size: 25px;
-    font-weight: 600;
+  @extend %center;
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .form__container {
@@ -63,7 +63,13 @@
     color: $terciaryColor;
   }
 
-  .form__link {
+  .check {
+    margin-left: 50px;
+    font-size: 14px;
+  }
+
+  .form__link2 {
+    width: 180px;
     font-size: 15px;
     text-decoration: none;
     color: $primaryColor;
@@ -75,38 +81,55 @@
     }
   }
 
-  .fa-facebook-f, .fa-google, .fa-twitter, .fa-github {
+  .form__link {
+    width: 180px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: $primaryColor;
+    font-weight: $fwb;
+    transition: all 300ms;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+
+  .fa-facebook-f,
+  .fa-google,
+  .fa-twitter,
+  .fa-github {
     margin-top: 30px;
     font-size: 20px;
     color: $primaryColor;
-}
+  }
 }
 
 /* añado esta clase porque no puedo separar el formulario del footer */
 .no-content {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 @media screen and (min-width: 640px) {
-    .form__container {
-        width: 60%;
-        @include m0-a;
-        @include display-flex-c;
-    }
+  .form__container {
+    width: 60%;
+    @include m0-a;
+    @include display-flex-c;
+  }
 }
 
 @media screen and (min-width: 990px) {
-    .form__container {
-        width: 40%;
-        @include m0-a;
-        @include display-flex-c;
-    }
+  .form__container {
+    width: 40%;
+    @include m0-a;
+    @include display-flex-c;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-    .form__container {
-        width: 25%;
-        @include m0-a;
-        @include display-flex-c;
-    }
+  .form__container {
+    width: 25%;
+    @include m0-a;
+    @include display-flex-c;
+  }
 }

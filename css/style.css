@@ -42,7 +42,7 @@ a {
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .gallery {
@@ -82,7 +82,7 @@ a {
 .nosotros .nosotros__h2 {
   margin: 10px;
   padding: 20px;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: bold;
   color: #000;
   text-transform: uppercase;
@@ -111,8 +111,9 @@ a {
   width: 100%;
 }
 .last_container .last_h2 {
-  font-size: 35px;
+  font-size: 28px;
   margin: 20px;
+  text-align: center;
 }
 .last_container .last_img {
   width: 40%;
@@ -126,7 +127,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 45%;
   margin: 50px;
   height: auto;
 }
@@ -139,14 +140,20 @@ a {
   color: #ff0000;
 }
 .last_container .last_description .last_description_form {
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.last_container .last_description .last_description_form .ss {
+.last_container .last_description .last_description_form .input-email {
+  width: 350px;
   border: 1px solid silver;
   border-radius: 0;
   transition: all 600ms;
+  margin: 20px;
 }
-.last_container .last_description .last_description_form .ss:focus {
+.last_container .last_description .last_description_form .input-email:focus {
   border: none;
   border-bottom: 1px solid black;
 }
@@ -155,53 +162,11 @@ a {
   background-color: #ff0000;
   color: #fff;
   border: none;
-  width: 100px;
-  margin: 0px;
+  width: 200px;
   margin: 0 auto;
   margin: 20px;
 }
 
-@media only screen and (max-width: 650px) {
-  .p__img {
-    background-size: cover;
-    transition: all 300ms;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    background-size: center;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .gallery {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 20px;
-    gap: 15px;
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 20px;
-    gap: 30px;
-  }
-  .before_gallery_h2 {
-    align-items: center;
-    text-align: center;
-    margin: 50px;
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-size: 35px;
-  }
-  .img-1 {
-    height: 350px;
-  }
-}
 @media screen and (max-width: 1144px) {
   .last_container {
     display: flex;
@@ -222,6 +187,88 @@ a {
   }
   .last_container .last_description {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .p__img {
+    background-size: cover;
+    transition: all 300ms;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-size: center;
+  }
+  .last_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .last_container .last_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 50px;
+    height: auto;
+  }
+  .last_container .last_description .last_description_form {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last_container .last_description .last_description_form .input-email {
+    width: 250px;
+    border: 1px solid silver;
+    border-radius: 0;
+    transition: all 600ms;
+    margin: 20px;
+  }
+  .last_container .last_description .last_description_form .input-email:focus {
+    border: none;
+    border-bottom: 1px solid black;
+  }
+  .last_container .last_description .last_description__btn {
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    width: 150px;
+    margin: 0 auto;
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .gallery {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 20px;
+    gap: 15px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .before_gallery_h2 {
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+  .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 30px;
+  }
+  .img-1 {
+    height: 350px;
   }
 }
 .ad__envios {
@@ -338,7 +385,7 @@ footer .footer__links {
   margin-right: 50px;
 }
 footer .footer__links .h3__footer {
-  font-size: 25px;
+  font-size: 28px;
   overflow-y: hidden;
 }
 footer .footer__links .footer__link, footer .footer__links .footer__a {
@@ -357,6 +404,7 @@ footer .footer__links .footer__link:hover, footer .footer__links .footer__a:hove
 footer .footer__icons {
   font-size: 12px;
   margin-bottom: 50px;
+  margin-right: 50px;
 }
 footer .footer__icons .h3__footer__form {
   font-size: 20px;
@@ -365,7 +413,7 @@ footer .footer__icons .h3__footer__form {
 }
 footer .footer__icons .footer__input {
   padding: 17px;
-  width: 60%;
+  width: 70%;
   height: 15px;
   border: none;
 }
@@ -429,7 +477,7 @@ footer .footer__icons .fa-brands {
 .title__h2 {
   font-weight: bold;
   color: #000;
-  font-size: 35px;
+  font-size: 28px;
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 50px;
@@ -490,7 +538,7 @@ footer .footer__icons .fa-brands {
   top: 86%;
   right: 37.5%;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 28px;
   color: #000;
   width: 100px;
 }
@@ -540,7 +588,7 @@ footer .footer__icons .fa-brands {
   overflow-y: hidden;
 }
 .maps .call {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -686,9 +734,26 @@ footer .footer__icons .fa-brands {
   background-color: #ff0000;
   color: #fff;
 }
-.form__container .form__link {
+.form__container .check {
+  margin-left: 50px;
+  font-size: 14px;
+}
+.form__container .form__link2 {
+  width: 180px;
   font-size: 15px;
   text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: all 300ms;
+}
+.form__container .form__link2:hover {
+  color: #ff0000;
+}
+.form__container .form__link {
+  width: 180px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 40px;
   color: #000;
   font-weight: bold;
   transition: all 300ms;
@@ -696,7 +761,10 @@ footer .footer__icons .fa-brands {
 .form__container .form__link:hover {
   color: #ff0000;
 }
-.form__container .fa-facebook-f, .form__container .fa-google, .form__container .fa-twitter, .form__container .fa-github {
+.form__container .fa-facebook-f,
+.form__container .fa-google,
+.form__container .fa-twitter,
+.form__container .fa-github {
   margin-top: 30px;
   font-size: 20px;
   color: #000;

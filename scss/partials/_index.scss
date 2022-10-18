@@ -1,226 +1,263 @@
-.principal{
-    display: flex;
-    position: relative;
-    object-fit: cover;
+.principal {
+  display: flex;
+  position: relative;
+  object-fit: cover;
 
-    .p__img {
-        width: 100%;
-        background-color: $bgfilter;
-        filter: brightness(0.7); 
-    }
+  .p__img {
+    width: 100%;
+    background-color: $bgfilter;
+    filter: brightness(0.7);
+  }
 }
 
-.before_gallery_h2{
-    @extend %center;
-    @extend %center;
-    margin: 50px;
-    font-family: $fontPoppins;
-    font-weight: $fwb;
-    color: $primaryColor;
-    text-transform: uppercase;
-    font-size: 35px;
+.before_gallery_h2 {
+  @extend %center;
+  @extend %center;
+  margin: 50px;
+  font-family: $fontPoppins;
+  font-weight: $fwb;
+  color: $primaryColor;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .gallery {
-    width: 90%;
-    @include grid-index;
-    padding: 20px;
-    gap: 25px;
-    @include m0-a;
-    margin-top: 40px;
+  width: 90%;
+  @include grid-index;
+  padding: 20px;
+  gap: 25px;
+  @include m0-a;
+  margin-top: 40px;
 
-    .gallery__img-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+  .gallery__img-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-        &:hover {
-            transition: all 300ms;
-            background-color: $bgfilter;
-            filter: brightness(0.6); 
-        }
+    &:hover {
+      transition: all 300ms;
+      background-color: $bgfilter;
+      filter: brightness(0.6);
     }
+  }
 
-    .gallery__img {
-        width: 100%;
-        grid-row: span 2;
-        grid-column: span 1;
-    }
-    
-    .gallery__img1 {
-        grid-row: span 1;
-    }
+  .gallery__img {
+    width: 100%;
+    grid-row: span 2;
+    grid-column: span 1;
+  }
+
+  .gallery__img1 {
+    grid-row: span 1;
+  }
 }
 
-
-
 .nosotros {
-    @include display-flex-c;
+  @include display-flex-c;
 
-    .nosotros__h2 {
-        @extend %center;
-        margin: 10px;
-        padding: 20px;
-        font-size: $fonth2;
-        font-weight: $fwb;
-        color: $primaryColor;
-        text-transform: uppercase;
-    }
-    
-    .nosotros__p{
-        @include m0-a;
-        width: 55%;
-        @extend %center;
-        margin-bottom: 40px;
-    }
-    
-    .nosotros__btn {
-        border: none;
-        padding: 10px;
-        background-color: $botonsPrimary;
-        color: $terciaryColor;
-        margin-bottom: 50px;
+  .nosotros__h2 {
+    @extend %center;
+    margin: 10px;
+    padding: 20px;
+    font-size: $fonth3;
+    font-weight: $fwb;
+    color: $primaryColor;
+    text-transform: uppercase;
+  }
 
-        &:hover {
-            transition: all 300ms;
-            transform: scale(1.1);
-        }
+  .nosotros__p {
+    @include m0-a;
+    width: 55%;
+    @extend %center;
+    margin-bottom: 40px;
+  }
+
+  .nosotros__btn {
+    border: none;
+    padding: 10px;
+    background-color: $botonsPrimary;
+    color: $terciaryColor;
+    margin-bottom: 50px;
+
+    &:hover {
+      transition: all 300ms;
+      transform: scale(1.1);
     }
+  }
 }
 
 .last_container {
-    @include last-container-flex;
+  @include last-container-flex;
+  width: 100%;
+
+  .last_h2 {
+    font-size: $fonth3;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .last_img {
+    width: 40%;
+  }
+
+  .last_img-img {
+    margin: 50px;
+    margin-left: 45px;
     width: 100%;
+  }
 
-    .last_h2 {
-        font-size: $fonth2;
-        margin: 20px;
-    }
-    
-    .last_img {
-        width: 40%;
-    }
-    
-    .last_img-img{
-        margin: 50px;
-        margin-left: 45px;
-        width: 100%;
-    }
-    
-    .last_description {
-        @include last-description-flex;
-        width: 40%;
-        margin: 50px;
-        height: auto;
+  .last_description {
+    @include last-description-flex;
+    width: 45%;
+    margin: 50px;
+    height: auto;
 
-        .nosotros__a {
-            color: $primaryColor;
-            font-weight: $fwb;
+    .nosotros__a {
+      color: $primaryColor;
+      font-weight: $fwb;
 
-            &:hover {
-                transition: all 300ms;
-                color: $secondaryColor;
-            }
-        }
-
-        .last_description_form {
-            @include m0-a;
-
-            .ss {
-                border: 1px solid silver;
-                border-radius: 0;
-                transition: all 600ms;
-
-                &:focus {
-                    border: none;
-                    border-bottom: 1px solid black;
-                }
-            }
-        }
-        
-        .last_description__btn {
-            padding: 10px;
-            background-color: $botonsPrimary;
-            color: $terciaryColor;
-            border: none;
-            width: 100px;
-            margin: 0px;
-            @include m0-a;
-            margin: 20px;
-        }
-    }   
-}
-
-@media only screen and (max-width: 650px) {
-    .p__img {
-        background-size: cover;
+      &:hover {
         transition: all 300ms;
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-        background-size: center;
-    }
-}
-
-@media only screen and (max-width:950px){
-    .gallery {
-        width: 90%;
-        @include grid-index-tablet;
-        padding: 20px;
-        gap: 15px;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    .gallery {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 20px;
-        gap: 30px;
+        color: $secondaryColor;
+      }
     }
 
-    .before_gallery_h2 {
-        align-items: center;
-        text-align: center;
-        margin: 50px;
-        font-family: $fontPoppins;
-        text-transform: uppercase;
-        font-size: 35px;
+    .last_description_form {
+      width: 100%;
+      @include m0-a;
+      @include display-flex-c;
+
+      .input-email {
+        width: 350px;
+        border: 1px solid silver;
+        border-radius: 0;
+        transition: all 600ms;
+        margin: 20px;
+
+        &:focus {
+          border: none;
+          border-bottom: 1px solid black;
+        }
+      }
     }
 
-    .img-1 {
-        height: 350px;
+    .last_description__btn {
+      padding: 10px;
+      background-color: $botonsPrimary;
+      color: $terciaryColor;
+      border: none;
+      width: 200px;
+      @include m0-a;
+      margin: 20px;
     }
+  }
 }
 
 @media screen and (max-width: 1144px) {
-    .last_container {
-        @include display-flex-c;
-        text-align: center;
+  .last_container {
+    @include display-flex-c;
+    text-align: center;
 
-        
     .last_img {
-        width: 86%;
-        
-    .last_img-img {
+      width: 86%;
+
+      .last_img-img {
         margin: 0px;
         margin-top: 40px;
         width: 100%;
-    }
+      }
     }
 
     .last_h2 {
-        font-size: 20px;
+      font-size: 20px;
     }
 
     .last_description {
-        width: 80%;
+      width: 80%;
     }
-    }
-
+  }
 }
 
+@media only screen and (max-width: 650px) {
+  .p__img {
+    background-size: cover;
+    transition: all 300ms;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-size: center;
+  }
 
+  .last_container {
+    @include last-container-flex;
+    width: 100%;
 
+    .last_description {
+      @include last-description-flex;
+      width: 100%;
+      margin: 50px;
+      height: auto;
+
+      .last_description_form {
+        width: 100%;
+        @include m0-a;
+        @include display-flex-c;
+
+        .input-email {
+          width: 250px;
+          border: 1px solid silver;
+          border-radius: 0;
+          transition: all 600ms;
+          margin: 20px;
+
+          &:focus {
+            border: none;
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+      .last_description__btn {
+        padding: 10px;
+        background-color: $botonsPrimary;
+        color: $terciaryColor;
+        border: none;
+        width: 150px;
+        @include m0-a;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .gallery {
+    width: 90%;
+    @include grid-index-tablet;
+    padding: 20px;
+    gap: 15px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .before_gallery_h2 {
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    font-family: $fontPoppins;
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+
+  .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .img-1 {
+    height: 350px;
+  }
+}
