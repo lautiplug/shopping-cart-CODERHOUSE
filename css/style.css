@@ -471,6 +471,10 @@ footer .footer__icons .fa-brands {
 }
 .principal-snkr__img {
   width: 100%;
+  height: 800px;
+  background-color: rgb(31, 31, 31);
+  filter: brightness(0.8);
+  object-fit: cover;
   margin-top: 0px;
 }
 
@@ -509,12 +513,12 @@ footer .footer__icons .fa-brands {
   top: 10;
   right: 5%;
 }
-.flex__card .flex__child .flex__links .fa-cart-plus {
+.flex__card .flex__child .flex__links .fa-heart {
   font-size: 25px;
   transition: all 300ms;
   color: black;
 }
-.flex__card .flex__child .flex__links .fa-cart-plus:hover {
+.flex__card .flex__child .flex__links .fa-heart:hover {
   color: #ff0000;
 }
 .flex__card .flex__child .flex__content-description {
@@ -551,6 +555,14 @@ footer .footer__icons .fa-brands {
 @media only screen and (max-width: 968px) {
   .flex__card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .principal-snkr__img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-color: rgb(31, 31, 31);
+    filter: brightness(0.8);
+    margin-top: 0px;
   }
 }
 @media only screen and (max-width: 530px) {

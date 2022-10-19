@@ -1,5 +1,9 @@
 .principal-snkr__img {
     width: 100%;
+    height: 800px;
+    background-color: $bgfilter;
+    filter: brightness(0.8);
+    object-fit: cover;
     margin-top: 0px;
 }
 
@@ -42,7 +46,7 @@
             top: 10;
             right: 5%;
 
-            .fa-cart-plus {
+            .fa-heart {
                 font-size: 25px;
                 transition: all 300ms;
                 color: black;
@@ -92,6 +96,15 @@
     .flex__card {
         grid-template-columns: repeat(2, 1fr);
     }
+
+        .principal-snkr__img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            background-color: $bgfilter;
+            filter: brightness(0.8);
+            margin-top: 0px;
+        }
 }
 
 @media only screen and (max-width: 530px) {
