@@ -65,7 +65,7 @@ footer {
 
         .footer__btn {
             padding: 8px;
-            margin-right: 20px;
+            margin-right: 18px;
             background-color: $secondaryColor;
             color: $terciaryColor;
             border: none;
@@ -122,6 +122,11 @@ footer {
         .footer__icons {
             position: relative;
             left: 10%;
+
+            .icons-icons {
+                position: relative;
+                left: 4%;
+            }
         }
     }
 }

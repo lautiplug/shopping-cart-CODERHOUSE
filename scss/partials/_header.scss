@@ -22,14 +22,36 @@ nav{
     .nav-item__a { 
         font-size: $fontLinkN;
         color: $primaryColor;
+        font-size: 16px;
+
+        &:hover {
+            color: $primaryColor;
+        }
+
+        &::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background-color: $secondaryColor;
+            display: block;
+            transition: .3s ease-in-out;
+        }
+        
+        &:hover::after {
+            content: '';
+            height: 3px;
+            width: 100%;
+            background-color: $secondaryColor;
+            display: block;
+        }
     }
     
     .nav__links {
         margin-top: 40px;
-    
+
         .items-container {
             @include display-flex-c;
-        
+
             .fa-regular {
                 font-size: 25px;
                 position: absolute;
@@ -46,6 +68,8 @@ nav{
                 padding: 10px;
             }
         }
+
+        
     }
 
         .fa-solid {
@@ -61,8 +85,7 @@ nav{
                 transition: all 300ms;
                 transform: scale(1.1);
             }
-
-            
+        
         }
         
         .btn-close {
@@ -72,26 +95,7 @@ nav{
             font-size: 20px;
             color: $primaryColor;
         }
-        
-        .items-container {
-            @include display-flex-c;
-
-            .fa-regular {
-                font-size: 26px;
-                position: absolute;
-                bottom: 7%;
-                left: 5.3%;
-                padding: 7px;
-            }
-            
-            .shopping-cart {
-                width: 47px;
-                position: absolute;
-                bottom: 2%;
-                left: 4%;
-                padding: 10px;
-            }
-        }
+    
 }
 
 @media only screen and (max-width: 768px){
