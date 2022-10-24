@@ -153,6 +153,14 @@
   }
 }
 
+
+.arrowup {
+  position: relative;
+  left: 97%;
+  width: 22px;
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1144px) {
   .last_container {
     @include display-flex-c;
@@ -259,5 +267,12 @@
 
   .img-1 {
     height: 350px;
+  }
+
+  .arrowup {
+    position: relative;
+    left: 88%;
+    width: 25px;
+    margin-bottom: 40px;
   }
 }

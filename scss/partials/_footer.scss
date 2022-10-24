@@ -2,7 +2,7 @@ footer {
     width: 100%;
     height: 300px;
     @include flex-footer;
-    background-color: $primaryColor;
+    background-color: $footerColor;
     color: $terciaryColor;
 
     .footer__logotype {
@@ -26,6 +26,7 @@ footer {
         margin-right: 50px;
 
         .h3__footer {
+            width: 200px;
             font-size: $fonth3;
             overflow-y: hidden;
         }
@@ -45,13 +46,27 @@ footer {
         }
     }
 
+    .footer__pm {   
+        width: 19%;
+        margin-bottom: 2px;
+        @extend %center;
+        .h3__footer {
+            overflow-y: hidden;
+            text-align: center;
+        }
+
+        .paymentMethods {
+            width: 100%;
+        }
+    }
+
     .footer__icons{
         font-size: 12px;
         margin-bottom: 50px;
         margin-right: 50px;
 
         .h3__footer__form {
-            font-size: 20px;
+            font-size: 25px;
             margin-bottom: 11px;
             overflow-y: hidden;
         }
@@ -86,13 +101,37 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1514px) {
+    footer {
+        width: 100%;
+        height: auto;
+        @include flex-footer;
+        background-color: $footerColor;
+        color: $terciaryColor;
+
+        .footer__pm {   
+            width: 22%;
+            margin-bottom: 15px;
+    
+            .h3__footer {
+                overflow-y: hidden;
+                text-align: center;
+            }
+    
+            .paymentMethods {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1168px) {
     footer {
         width: 100%;
         height: auto;
         @include flex-footer;
         flex-direction: column;
-        background-color: $primaryColor;
+        background-color: $footerColor;
         color: $terciaryColor;
 
         .footer__logotype {
@@ -110,8 +149,23 @@ footer {
         }
     
         .footer__icons {
+            width: 300px;
             position: relative;
-            left: 5%;
+            left: 4%;
+        }
+
+        .footer__pm {   
+            width: 37%;
+            margin-bottom: 15px;
+    
+            .h3__footer {
+                overflow-y: hidden;
+                text-align: center;
+            }
+    
+            .paymentMethods {
+                width: 100%;
+            }
         }
     }
  
@@ -126,6 +180,19 @@ footer {
             .icons-icons {
                 position: relative;
                 left: 4%;
+            }
+        }
+        .footer__pm {   
+            width: 77%;
+            margin-bottom: 55px;
+    
+            .h3__footer {
+                overflow-y: hidden;
+                text-align: center;
+            }
+    
+            .paymentMethods {
+                width: 100%;
             }
         }
     }

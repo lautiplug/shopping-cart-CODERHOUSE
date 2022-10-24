@@ -171,11 +171,8 @@ a {
   margin: 20px;
 }
 
-.arrowup {
-  position: relative;
-  left: 97%;
-  width: 22px;
-  margin-bottom: 40px;
+.arrowup img {
+  width: 30px;
 }
 
 @media screen and (max-width: 1144px) {
@@ -281,12 +278,6 @@ a {
   .img-1 {
     height: 350px;
   }
-  .arrowup {
-    position: relative;
-    left: 88%;
-    width: 25px;
-    margin-bottom: 40px;
-  }
 }
 .ad__envios {
   margin: 0px;
@@ -383,7 +374,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(8, 8, 8);
+  background-color: #000;
   color: #fff;
 }
 footer .footer__logotype {
@@ -402,7 +393,6 @@ footer .footer__links {
   margin-right: 50px;
 }
 footer .footer__links .h3__footer {
-  width: 200px;
   font-size: 28px;
   overflow-y: hidden;
 }
@@ -419,24 +409,13 @@ footer .footer__links .footer__link:hover, footer .footer__links .footer__a:hove
   transition: all 300ms;
   color: #ff0000;
 }
-footer .footer__pm {
-  width: 19%;
-  margin-bottom: 2px;
-}
-footer .footer__pm .h3__footer {
-  overflow-y: hidden;
-  text-align: center;
-}
-footer .footer__pm .paymentMethods {
-  width: 100%;
-}
 footer .footer__icons {
   font-size: 12px;
   margin-bottom: 50px;
   margin-right: 50px;
 }
 footer .footer__icons .h3__footer__form {
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 11px;
   overflow-y: hidden;
 }
@@ -465,28 +444,6 @@ footer .footer__icons .fa-brands {
   left: 15%;
 }
 
-@media only screen and (max-width: 1514px) {
-  footer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(8, 8, 8);
-    color: #fff;
-  }
-  footer .footer__pm {
-    width: 22%;
-    margin-bottom: 15px;
-  }
-  footer .footer__pm .h3__footer {
-    overflow-y: hidden;
-    text-align: center;
-  }
-  footer .footer__pm .paymentMethods {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 1168px) {
   footer {
     width: 100%;
@@ -495,7 +452,7 @@ footer .footer__icons .fa-brands {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-color: rgb(8, 8, 8);
+    background-color: #000;
     color: #fff;
   }
   footer .footer__logotype {
@@ -510,20 +467,8 @@ footer .footer__icons .fa-brands {
     margin-bottom: 30px;
   }
   footer .footer__icons {
-    width: 300px;
     position: relative;
-    left: 4%;
-  }
-  footer .footer__pm {
-    width: 37%;
-    margin-bottom: 15px;
-  }
-  footer .footer__pm .h3__footer {
-    overflow-y: hidden;
-    text-align: center;
-  }
-  footer .footer__pm .paymentMethods {
-    width: 100%;
+    left: 5%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -534,17 +479,6 @@ footer .footer__icons .fa-brands {
   footer .footer__icons .icons-icons {
     position: relative;
     left: 4%;
-  }
-  footer .footer__pm {
-    width: 77%;
-    margin-bottom: 55px;
-  }
-  footer .footer__pm .h3__footer {
-    overflow-y: hidden;
-    text-align: center;
-  }
-  footer .footer__pm .paymentMethods {
-    width: 100%;
   }
 }
 .principal-snkr__img {
@@ -896,7 +830,7 @@ footer .footer__icons .fa-brands {
   border: 1px solid rgb(240, 240, 240);
 }
 
-.before_gallery_h2, .nosotros .nosotros__h2, .nosotros .nosotros__p, .ad__envios, footer .footer__logotype, footer .footer__links, footer .footer__pm, .title__h2, .flex__card .flex__child .flex__content-description .flex__p, .maps .maps__1 .maps__h3, .maps iframe .maps__h3, .maps .call, .marcas__title, .marcas__container .marcas__ol,
+.before_gallery_h2, .nosotros .nosotros__h2, .nosotros .nosotros__p, .ad__envios, footer .footer__logotype, footer .footer__links, .title__h2, .flex__card .flex__child .flex__content-description .flex__p, .maps .maps__1 .maps__h3, .maps iframe .maps__h3, .maps .call, .marcas__title, .marcas__container .marcas__ol,
 .marcas__container .marcas__a, .title__h2-form {
   align-items: center;
   text-align: center;
@@ -907,4 +841,4 @@ footer .footer__icons .fa-brands {
   border: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css.map */
