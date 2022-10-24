@@ -7,8 +7,10 @@ _Este proyecto tiene como objetivo la compra y venta de productos Sneakers_
 _Este proyecto está siendo construido con html, SASS y bootstrap, así como animaciones basadas en javascript, también utilicé Canva para crear algunos diseños_
 
 * [HTML](https://html.com/)
+* [CSS](https://getbootstrap.com/)
 * [SASS](https://sass-lang.com/)
-* [Bootstrap](https://getbootstrap.com/)
+* [Bootstrap](https://www.w3schools.com/css/)
+
 
 ## Autor ✒️
 
