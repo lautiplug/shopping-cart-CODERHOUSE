@@ -11,19 +11,21 @@
   margin-top: 100px;
   margin-bottom: 100px;
 
-  .marcas__ol,
-  .marcas__a {
-    color: $primaryColor;
-    font-weight: $fwb;
-    font-size: 12px;
-    display: block;
-    flex-direction: column;
-    font-size: 13px;
-    @extend %center;
-
-    &:hover {
-      transition: all 300ms;
-      color: $secondaryColor;
+  .marcas {
+    .marcas__ol {
+      .marcas__a {
+        color: $primaryColor;
+        font-weight: $fwb;
+        font-size: 20px;
+        display: block;
+        flex-direction: column;
+        /* @extend %center; */
+    
+        &:hover {
+          transition: all 300ms;
+          color: $secondaryColor;
+        }
+      }
     }
   }
 }
@@ -31,7 +33,7 @@
 @media only screen and (max-width: 550px) {
   .marcas__container {
     @include display-flex-c;
-    text-align: center;
+    text-align: justify;
     margin-top: 50px;
 
     .marcas {
