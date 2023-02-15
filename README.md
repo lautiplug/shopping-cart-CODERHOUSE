@@ -1,4 +1,4 @@
-# Segunda Pre-entrega 
+# Shopping cart with HTML, CSS (SASS AND BOOTSTRAP)
 
 _Este proyecto tiene como objetivo la compra y venta de productos Sneakers_
 
